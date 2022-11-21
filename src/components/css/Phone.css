@@ -1,0 +1,33 @@
+.home__phone {
+    position: relative;
+    width: 380.32px;
+    height: 581.15px;
+    overflow: hidden;
+    margin-right: 32px;
+    margin-bottom: 12px;
+}
+
+.home__phone > img {
+    transform: translateX(-46px);
+}
+
+.home__phone .slides > img {
+    position: absolute;
+    top: 27px;
+    left: 110px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.home__phone .slides > img.slide-in {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease-in;
+    z-index: 2;
+}
+
+.home__phone .slides > img.slide-out {
+    visibility: visible;
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}

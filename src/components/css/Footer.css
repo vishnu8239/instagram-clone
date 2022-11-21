@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-links > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    margin: 0px 8px 8px 8px;
+}
+
+.footer .footer-base {
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+    display: flex;
+    gap: 14px;
+    margin-bottom: 52px;
+}
+
+.footer .footer-base .footer-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer .footer-base .footer-language svg {
+    height: 12px;
+    width: 12px;
+    fill: rgb(142, 142, 142);
+    margin-left: 4px;
+    transform: rotate(180deg);
+}

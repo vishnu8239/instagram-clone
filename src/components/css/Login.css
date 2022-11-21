@@ -1,0 +1,178 @@
+.home__login .login {
+    font-size: 14px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.home__login .login > img {
+    margin: 36px auto;
+}
+
+.home__login .login .login_input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.home__login .login .login_input label {
+    position: absolute;
+    left: calc((100% - 75%)/2 + 4px);
+    height: 36px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+    z-index: 0;
+}
+
+.home__login .message-box {
+    font-size: 14px;
+    color: rgb(237, 73, 86);
+    width: 270px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.home__login .hidden {
+    display: none;
+}
+
+.label-u__hover-in {
+    transition: transform 0.2s ease;
+    transform: scale(0.83) translateY(-10px) translateX(-20px);
+}
+
+.label__hover-in {
+    transition: transform 0.2s ease;
+    transform: scale(0.83) translateY(-10px) translateX(-6px);
+}
+
+.label__hover-out {
+    transition: transform 0.2s ease;
+}
+
+.home__login .login .login_input input {
+    width: 75%;
+    height: 20px;
+    margin-bottom: 6px;
+    padding: 9px 0px 7px 8px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    outline: none;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.home__login .login .login_input input:focus {
+    border-color: rgb(168, 168, 168);
+}
+
+.home__login .login > button:first-of-type {
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 149, 246, 0.3);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.home__login .login > button svg {
+    width: 28px;
+    height: 28px;
+}
+
+.home__login .login .clickable {
+    background-color: rgb(0, 149, 246) !important;
+    cursor: pointer !important;
+}
+
+.home__login .login .seperator {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    color: rgb(142, 142, 142);
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.home__login .login .seperator > div:not(.seperator-text) {
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+    flex: 1;
+}
+
+.home__login .login .seperator .seperator-text {
+    width: 55px;
+    text-align: center;
+}
+
+.home__login .login .facebook-login {
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home__login .login .facebook-login > img {
+    margin-right: 8px;
+}
+
+.home__login .login .facebook-login > span {
+    color: rgb(56, 81, 133);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home__login .login > a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(0, 55, 107);
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.home__login .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 25px 0px;
+    margin-bottom: 10px;
+    color: rgb(38, 38, 38);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.home__login .register > p {
+    margin: 0px;
+    padding-right: 4px;
+}
+
+.home__login .register > a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+}

@@ -1,0 +1,93 @@
+.message__user {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(34, 33, 33, 0.299);
+    z-index: 3;
+}
+
+.message__user .message_box {
+    width: 400px;
+    height: 64vh;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+
+.message__user .message_box .box_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    border-bottom: 1px solid rgba(102, 98, 98, 0.371);
+    padding: 0px 15px;
+}
+
+.message__user .message_box .box_header h2 {
+    all: unset;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.message__user .message_box .box_header span {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 148, 246, 0.315);
+}
+
+.message__user .message_box svg {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.message__user .message_box .search_flask {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.message__user .message_box .search_flask h2 {
+    all: unset;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.message__user .message_box .search_flask input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    color: white;
+    caret-color: white;
+    font-size: 14px;
+}
+
+.box_search_result {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 285px;
+    overflow: scroll;
+}
+
+.box_search_result .individual_user {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.box_search_result .individual_user:hover {
+    background-color: rgb(32, 30, 30);
+}
+
+.box_search_result .individual_user h2 {
+    all: unset;
+    font-size: 14px;
+    font-weight: 600;
+}

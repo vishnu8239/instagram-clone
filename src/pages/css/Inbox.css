@@ -1,0 +1,241 @@
+.inbox__container {
+    padding-top: 61px;
+    color: white;
+    background-color: rgb(18, 18, 18);
+    height: calc(100vh - 61px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inbox__container h1,
+.inbox__container h2 {
+    all: unset;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container__box {
+    width: 67vw;
+    height: 83vh;
+    background-color: black;
+    border: 1px solid rgba(70, 68, 68, 0.574);
+    display: flex;
+}
+
+.box_users {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-right: 1px solid rgba(70, 68, 68, 0.574);
+}
+
+.box_users .users_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    height: 59px;
+    border-bottom: 1px solid rgba(70, 68, 68, 0.574);
+}
+
+.box_users .users_header h1 {
+    font-size: 16px;
+    cursor: default;
+}
+
+.box_users .users_header > svg:first-of-type {
+    width: 20px;
+    height: 20px;
+    transform: translate(2px, 2px);
+    cursor: default;
+}
+
+.box_users .users_header > svg:not(:first-of-type) {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.box_message {
+    flex: 1.8;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box_message > h1 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.box_message > span {
+    font-size: 14px;
+    color: rgb(142, 142, 142);
+}
+
+.box_message > button {
+    all: unset;
+    background-color: rgb(0, 149, 246);
+    border-radius: 4px;
+    padding: 6px 9px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.box_users .users_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.users_list .message_overview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.users_list .message_overview > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.users_list .message_overview:hover {
+    background-color: rgb(14, 13, 13);
+}
+
+.users_list .message_overview > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.users_list .message_overview h2 {
+    all: unset;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.users_list .message_overview span {
+    font-size: 14px;
+    color: rgb(142, 142, 142);
+}
+
+.box_message .message__fill {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message__fill .message_user__info {
+    display: flex;
+    align-items: center;
+    height: 59px;
+    border-bottom: 1px solid rgba(70, 68, 68, 0.574);
+}
+
+.message__fill .message_user__info > img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 10px 10px 10px 20px;
+}
+
+.message__fill .message_user__info > span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.message__fill .message__typer {
+    position: relative;
+}
+
+.message__fill .message__typer input {
+    width: 93%;
+    height: 32px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    margin: 10px 20px;
+    padding-left: 40px;
+    padding-right: 105px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(125, 121, 121, 0.404);
+    caret-color: white;
+    box-sizing: border-box;
+}
+
+.message__fill .message__typer > svg {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+}
+
+.message__fill .message__typer > img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 80px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.message__fill .message__typer > img:hover {
+    opacity: 80%;
+}
+
+.message__fill .message__typer > button {
+    all: unset;
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(45, 143, 208, 0.622);
+    background-color: transparent;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.message__fill .message__typer > button.send-dark {
+    color: rgb(0, 153, 255) !important;
+}
+
+.message__body {
+    overflow: scroll
+}
+
+.message__body .message__text_right {
+    text-align: end;
+    padding: 5px 20px;
+}
+
+.message__body .message__text_left {
+    text-align: start;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+}
+
+.message__body .message__text_left span {
+    padding: 6px 10px;
+    background-color: rgba(82, 76, 76, 0.424);
+    border-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}

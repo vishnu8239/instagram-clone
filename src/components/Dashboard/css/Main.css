@@ -1,0 +1,332 @@
+.dashboard__main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    min-height: calc(100vh - 61px);
+    background-color: rgb(18, 18, 18);
+    padding-top: 61px;
+}
+
+.main__posts_container {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.main__posts_container .post-box {
+    width: 470px;
+    align-self: flex-end;
+    border: 1px solid rgba(70, 67, 67, 0.665);
+    border-radius: 8px;
+    background-color: black;
+}
+
+.post-box .post-username {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 56px;
+    border-bottom: 1px solid rgba(70, 67, 67, 0.665);
+    padding-left: 15px;
+}
+
+.post-box .post-username > img {
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-box .post-username > span {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-box .post-photo > img {
+    width: 470px;
+}
+
+.post-comments .post-reactions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 15px;
+}
+
+.post-comments .post-reactions svg {
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+
+.post-comments .post-reactions svg.heart-red {
+    color: rgb(237, 73, 86);
+    fill: rgb(237, 73, 86);
+    cursor: pointer;
+}
+
+.post-comments .post-reactions svg.heart-red:hover {
+    color: rgb(237, 73, 86);
+    fill: rgb(237, 73, 86);
+    cursor: pointer;
+}
+
+.post-comments .post-reactions svg:hover {
+    color: #8e8e8e;
+    fill: #8e8e8e;
+}
+
+.post-comments .post-likes {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 15px;
+}
+
+.post-comments .post-caption {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 15px;
+}
+
+.post-comments .post-caption > span:first-of-type {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-comments .post-total-comments {
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    padding: 6px 15px;
+}
+
+.post-comments .post-total-comments > h3 {
+    all: unset;
+    cursor: pointer;
+}
+
+.post-total-comments .individual-comment {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    padding-top: 4px;
+}
+
+.post-total-comments .individual-comment h3 {
+    all: unset;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-comments .post-date {
+    padding: 20px 15px;
+    padding-top: 5px;
+}
+
+.post-comments .post-date > time {
+    all: unset;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(142, 142, 142);
+}
+
+.post-box .post-add-comment {
+    width: calc(100% - 15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    border-top: 1px solid rgba(131, 127, 127, 0.388);
+}
+
+.post-box .post-add-comment > div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+}
+
+.post-add-comment > span svg {
+    width: 20px;
+    height: 20px;
+    transform: translate(-5px, 0px);
+}
+
+.comment-box {
+    resize: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    width: 350px;
+    padding: 5px 0px;
+    font-size: 14px;
+    caret-color: whitesmoke;
+    color: whitesmoke;
+    transition: height 0.3s ease;
+}
+
+.comment-box::placeholder {
+    color: rgba(184, 184, 186, 0.889);
+}
+
+.post-add-comment > span {
+    padding-right: 20px;
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.post-add-comment > span.disabled {
+    color: rgba(0, 148, 246, 0.469);
+    cursor: default;
+}
+
+.main__suggestions {
+    flex: 4;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.main__suggestions .user-data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 320px;
+}
+
+.main__suggestions .user-data h3,
+.main__suggestions .user-data h4 {
+    all: unset;
+}
+
+.main__suggestions .user-data > img {
+    width: 56px;
+    border-radius: 50%;
+}
+
+.main__suggestions .user-data .user-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__suggestions .user-data .user-info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+}
+
+.main__suggestions .user-data .user-username {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main__suggestions .user-data .user-info h4 {
+    font-size: 14px;
+    color: rgb(142, 142, 142);
+}
+
+.main__suggestions .user-data .user-info > h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+    cursor: pointer;
+}
+
+.main__suggestions .user-data .user-info a {
+    all: unset;
+}
+
+.user-suggestions {
+    width: 320px;
+    margin-top: 16px;
+}
+
+.user-suggestions > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-suggestions > div:first-of-type h3 {
+    all: unset;
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-suggestions > div:first-of-type span {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.user-suggestions .suggestions-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+}
+
+.suggestions-box .profile-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.suggestions-box .suggest {
+    display: flex;
+    align-items: center;
+    height: 46px;
+}
+
+.suggest .username-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.suggest .username-box > h3 {
+    all: unset;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.suggest .username-box > span {
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+}
+
+.suggest > h4 {
+    all: unset;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+    cursor: pointer;
+}
+
+.suggest > h4.following-button {
+    color: white;
+}
+
+.suggest > svg {
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 0px);
+}

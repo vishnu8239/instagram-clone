@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home__container {
+    display: flex;
+    align-items: center;
+    margin: 32px auto;
+}
